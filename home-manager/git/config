@@ -1,0 +1,62 @@
+[user]
+	name = t3yamoto
+	email = 3yamoto.dev@gmail.com
+	signingKey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIKeLPqEOnbVV3lpiZvvx5i/rw3A9HApLQJmwsH3lquc3
+
+[gpg]
+	format = ssh
+
+[gpg "ssh"]
+	allowedSignersFile = ~/.config/git/allowed_signers
+
+[commit]
+	gpgSign = true
+
+[tag]
+	gpgSign = true
+
+[ghq]
+	root = ~/dev
+	user = t3yamoto
+
+[include]
+	path = ~/.config/git/config_private
+
+[includeIf "gitdir:~/dev-work/"]
+	path = ~/.config/git/config_work
+
+[init]
+	defaultBranch = main
+
+[diff "cp932"]
+	textconv = iconv -f cp932
+
+[diff "sjis"]
+	textconv = iconv -f sjis
+
+[core]
+	pager = delta
+	quotepath = false
+	excludesfile = ~/.config/git/ignore
+	hooksPath = ~/.config/git/hooks
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true
+	light = false
+	side-by-side = true
+
+[merge]
+	conflictstyle = diff3
+
+[diff]
+	colorMoved = default
+
+[alias]
+	pushf = push --force-with-lease --force-if-includes
+
+[wt]
+	basedir = .wt
+

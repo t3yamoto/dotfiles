@@ -1,0 +1,14 @@
+[tools]
+node = "22"
+python = "3.13"
+uv = "latest"
+
+"npm:aws-cdk" = "latest"
+"pipx:aws-sam-cli" = "latest"
+
+[settings]
+idiomatic_version_file_enable_tools = ["python", "node"]
+
+[settings.pipx]
+uvx = true
+

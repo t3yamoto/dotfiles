@@ -1,0 +1,7 @@
+#!/bin/sh
+gitleaks protect --staged --redact
+
+local_hook="$(git rev-parse --git-dir)/hooks/pre-commit"
+if [ -f "$local_hook" ]; then
+    sh "$local_hook"
+fi
