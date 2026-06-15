@@ -25,7 +25,6 @@
     neovim
     tree
     vim
-    watson
   ];
 
   programs.zsh = {
@@ -61,6 +60,17 @@
   programs.mise = {
     enable = true;
     enableZshIntegration = true;
+  };
+
+  programs.watson = {
+    enable = true;
+    enableZshIntegration = true;
+    settings = {
+      options = {
+        stop_on_start = true;
+        confirm_new_project = true;
+      };
+    };
   };
 
   xdg.configFile."git/config".source = ./git/config;
