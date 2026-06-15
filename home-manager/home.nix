@@ -22,6 +22,7 @@
     git-wt
     gitleaks
     jq
+    neovim
     tree
     vim
     watson
@@ -80,6 +81,7 @@
     executable = true;
   };
   xdg.configFile."vim/vimrc".source = ./vim/vimrc;
+  xdg.configFile."nvim/init.lua".source = ./nvim/init.lua;
   xdg.configFile."wezterm/wezterm.lua".source = ./wezterm/wezterm.lua;
 
   home.sessionVariables = {
