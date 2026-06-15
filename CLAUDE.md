@@ -2,7 +2,7 @@
 
 ## Package management policy
 
-- CLI tools: `home.packages` or `programs.*` (use `programs.*` when shell integration is needed)
+- CLI tools: `home.packages` or `programs.*` (use `programs.*` when shell integration is needed; check availability at https://github.com/nix-community/home-manager/tree/master/modules/programs)
 - Language runtimes: mise (`home-manager/mise/config.toml`)
 - Config files: `xdg.configFile`
 - GUI apps: Homebrew cask
