@@ -25,7 +25,8 @@
 
     casks = [
       "1password"
-      "docker"
+      "claude"
+      "docker-desktop"
       "aws-vpn-client"
       "azookey"
       "choosy"
