@@ -90,3 +90,6 @@ imap ( ()<LEFT>
 " filetypeの自動検出
 filetype on
 
+" leader キーをスペースに設定
+let mapleader = " "
+
