@@ -23,7 +23,6 @@
     git-wt
     gitleaks
     jq
-    neovim
     ripgrep
     tree
     vim
@@ -64,6 +63,13 @@
     enableZshIntegration = true;
   };
 
+  programs.neovim = {
+    enable = true;
+    plugins = with pkgs.vimPlugins; [
+      lazy-nvim
+    ];
+  };
+
   programs.watson = {
     enable = true;
     enableZshIntegration = true;
@@ -94,6 +100,7 @@
   };
   xdg.configFile."vim/vimrc".source = ./vim/vimrc;
   xdg.configFile."nvim/init.lua".source = ./nvim/init.lua;
+  xdg.configFile."nvim/lua/plugins/colorscheme.lua".source = ./nvim/lua/plugins/colorscheme.lua;
   xdg.configFile."wezterm/wezterm.lua".source = ./wezterm/wezterm.lua;
 
   home.sessionVariables = {
