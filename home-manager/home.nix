@@ -12,6 +12,7 @@
     curl
     delta
     envchain
+    fd
     fzf
     gemini-cli
     gh
