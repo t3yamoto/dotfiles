@@ -108,6 +108,7 @@
   xdg.configFile."nvim/lua/plugins/colorscheme.lua".source = ./nvim/lua/plugins/colorscheme.lua;
   xdg.configFile."nvim/lua/plugins/treesitter.lua".source = ./nvim/lua/plugins/treesitter.lua;
   xdg.configFile."nvim/lua/plugins/lsp.lua".source = ./nvim/lua/plugins/lsp.lua;
+  xdg.configFile."nvim/lua/plugins/telescope.lua".source = ./nvim/lua/plugins/telescope.lua;
   xdg.configFile."wezterm/wezterm.lua".source = ./wezterm/wezterm.lua;
 
   home.sessionVariables = {
