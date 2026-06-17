@@ -23,6 +23,7 @@
     gitleaks
     jq
     neovim
+    ripgrep
     tree
     vim
   ];
