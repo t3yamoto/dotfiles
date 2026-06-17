@@ -62,6 +62,14 @@
         _FXShowPosixPathInTitle = true;
       };
 
+      menuExtraClock = {
+        Show24Hour = true;
+        ShowDate = 1;
+        ShowDayOfMonth = true;
+        ShowDayOfWeek = true;
+        ShowSeconds = true;
+      };
+
       CustomUserPreferences = {
         NSGlobalDomain = {
           AppleLanguages = [
