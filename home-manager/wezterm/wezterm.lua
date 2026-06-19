@@ -6,9 +6,9 @@ config.use_ime = true
 config.macos_forward_to_ime_modifier_mask = 'SHIFT|CTRL'
 config.font_size = 14
 config.font = wezterm.font 'UDEV Gothic 35NF'
-config.window_background_opacity = 0.85
+config.window_background_opacity = 0.9
 config.macos_window_background_blur = 20
-config.color_scheme = 'Solarized Dark (Gogh)'
+config.color_scheme = 'Kanagawa (Gogh)'
 
 config.inactive_pane_hsb = {  
   hue = 1.0,  
@@ -33,7 +33,7 @@ config.window_frame = {
 
 -- タブバーを背景色に合わせる
 config.window_background_gradient = {
-  colors = { "#002B36" },
+  colors = { "#1F1F28" },
 }
 
 -- タブの追加ボタンを非表示
@@ -47,16 +47,16 @@ config.colors = {
     -- タブ同士の境界線を非表示
     inactive_tab_edge = "none",
     active_tab = {
-      bg_color = 'rgba(0, 43, 54, 0)',
-      fg_color = '#CF9A6B',
+      bg_color = 'rgba(31, 31, 40, 0)',
+      fg_color = '#E6C384',
     },
     inactive_tab = {
-      bg_color = 'rgba(0, 43, 54, 0)',
-      fg_color = '#839496',
+      bg_color = 'rgba(31, 31, 40, 0)',
+      fg_color = '#727169',
     },
     inactive_tab_hover = {
-      bg_color = 'rgba(0, 43, 54, 0)',
-      fg_color = '#CF9A6B',
+      bg_color = 'rgba(31, 31, 40, 0)',
+      fg_color = '#E6C384',
     },
   },
 }

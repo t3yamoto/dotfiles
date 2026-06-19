@@ -7,7 +7,6 @@
 
   home.packages = with pkgs; [
     awscli2
-    bat
     claude-code
     curl
     delta
@@ -41,6 +40,11 @@
       la = "ls -la";
     };
     initContent = builtins.readFile ./zsh/init.zsh;
+  };
+
+  programs.bat = {
+    enable = true;
+    config.theme = "Nord";
   };
 
   programs.atuin = {
