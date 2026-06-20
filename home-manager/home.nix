@@ -91,6 +91,8 @@
     };
   };
 
+  home.file.".editorconfig".source = ./editorconfig;
+
   xdg.configFile."git/config".source = ./git/config;
   xdg.configFile."git/config_work".source = ./git/config_work;
   xdg.configFile."git/allowed_signers".source = ./git/allowed_signers;
