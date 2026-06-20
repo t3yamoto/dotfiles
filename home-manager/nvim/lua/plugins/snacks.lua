@@ -15,6 +15,15 @@ return {
       { "<leader>fb", function() Snacks.picker.buffers() end,       desc = "Buffers" },
       { "gr",         function() Snacks.picker.lsp_references() end, desc = "LSP references" },
       { "gd",         function() Snacks.picker.lsp_definitions() end, desc = "LSP definitions" },
+      { "<leader>so", function() Snacks.picker.lsp_symbols({
+          filter = {
+            default = {
+              "Class", "Constructor", "Enum", "Field", "Function",
+              "Interface", "Method", "Module", "Namespace", "Package",
+              "Property", "Struct", "Trait", "Variable", "Constant",
+            },
+          },
+        }) end, desc = "LSP symbols (outline)" },
       { "<c-`>",      function() Snacks.terminal() end, desc = "Toggle terminal" },
       { "<c-`>",      function() Snacks.terminal() end, desc = "Toggle terminal", mode = "t" },
     },
