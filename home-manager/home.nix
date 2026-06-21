@@ -68,6 +68,9 @@
   programs.starship = {
     enable = true;
     enableZshIntegration = true;
+    settings = {
+      package.disabled = true;
+    };
   };
 
   programs.mise = {
