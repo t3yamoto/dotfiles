@@ -4,7 +4,12 @@ return {
     priority = 1000,
     lazy = false,
     opts = {
-      picker = {},
+      picker = {
+        sources = {
+          files = { hidden = true },
+          grep = { hidden = true },
+        },
+      },
       terminal = {
         win = { position = "float", border = "single" },
       },
