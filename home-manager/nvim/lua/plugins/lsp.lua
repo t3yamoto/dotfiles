@@ -2,7 +2,25 @@ return {
   {
     "neovim/nvim-lspconfig",
     config = function()
-      vim.lsp.enable({ "gopls", "ts_ls", "lua_ls", "nil_ls", "pyright" })
+      vim.lsp.config("yamlls", {
+        settings = {
+          yaml = {
+            schemaStore = { enable = false, url = "" },
+            schemas = require("schemastore").yaml.schemas(),
+          },
+        },
+      })
+
+      vim.lsp.config("jsonls", {
+        settings = {
+          json = {
+            schemas = require("schemastore").json.schemas(),
+            validate = { enable = true },
+          },
+        },
+      })
+
+      vim.lsp.enable({ "gopls", "ts_ls", "lua_ls", "nil_ls", "pyright", "yamlls", "jsonls" })
 
       vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Hover" })
       vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "Rename" })

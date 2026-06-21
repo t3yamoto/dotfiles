@@ -30,6 +30,8 @@
     tree
     tree-sitter
     typescript-language-server
+    vscode-langservers-extracted
+    yaml-language-server
     vim
   ];
 
@@ -118,6 +120,7 @@
   xdg.configFile."nvim/lua/plugins/snacks.lua".source = ./nvim/lua/plugins/snacks.lua;
   xdg.configFile."nvim/lua/plugins/completion.lua".source = ./nvim/lua/plugins/completion.lua;
   xdg.configFile."nvim/lua/plugins/treesitter-context.lua".source = ./nvim/lua/plugins/treesitter-context.lua;
+  xdg.configFile."nvim/lua/plugins/schemastore.lua".source = ./nvim/lua/plugins/schemastore.lua;
   xdg.configFile."nvim/lua/plugins/icons.lua".source = ./nvim/lua/plugins/icons.lua;
   xdg.configFile."nvim/lua/plugins/oil.lua".source = ./nvim/lua/plugins/oil.lua;
   xdg.configFile."nvim/lua/plugins/lualine.lua".source = ./nvim/lua/plugins/lualine.lua;
