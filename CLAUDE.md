@@ -1,5 +1,9 @@
 # CLAUDE.md
 
+## Applying changes
+
+Run `sudo darwin-rebuild switch --flake .` to apply any configuration changes.
+
 ## Package management policy
 
 - CLI tools: `home.packages` or `programs.*` (use `programs.*` when shell integration is needed; check availability at https://github.com/nix-community/home-manager/tree/master/modules/programs)
