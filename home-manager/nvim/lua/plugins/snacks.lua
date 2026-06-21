@@ -29,6 +29,7 @@ return {
             },
           },
         }) end, desc = "LSP symbols (outline)" },
+      { "<leader>gd", function() Snacks.picker.git_diff() end, desc = "Git diff hunks" },
       { "<c-`>",      function() Snacks.terminal() end, desc = "Toggle terminal" },
       { "<c-`>",      function() Snacks.terminal() end, desc = "Toggle terminal", mode = "t" },
     },
