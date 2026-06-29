@@ -1,6 +1,16 @@
 #!/bin/sh
 gitleaks protect --staged --redact
 
+_toplevel="$(git rev-parse --show-toplevel)"
+
+if [ -f "$_toplevel/lefthook.yml" ] || [ -f "$_toplevel/lefthook.yaml" ]; then
+  if lefthook -h >/dev/null 2>&1; then
+    lefthook run pre-commit "$@"
+  elif [ -x "$_toplevel/node_modules/.bin/lefthook" ]; then
+    "$_toplevel/node_modules/.bin/lefthook" run pre-commit "$@"
+  fi
+fi
+
 local_hook="$(git rev-parse --git-dir)/hooks/pre-commit"
 if [ -f "$local_hook" ]; then
     sh "$local_hook"
