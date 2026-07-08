@@ -26,6 +26,7 @@
 
     casks = [
       "1password"
+      "entireio/tap/entire"
       "claude"
       "docker-desktop"
       "aws-vpn-client"
@@ -45,6 +46,7 @@
 
     taps = [
       "FelixKratz/formulae"
+      "entireio/tap"
     ];
   };
 }
