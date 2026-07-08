@@ -5,6 +5,7 @@ python = "3.13"
 uv = "latest"
 
 "npm:aws-cdk" = "latest"
+"npm:typescript-language-server" = "latest"
 "pipx:aws-sam-cli" = "latest"
 
 [settings]
