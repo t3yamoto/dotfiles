@@ -21,6 +21,7 @@
     brews = [
       "borders"
       "crit"
+      "hunk"
       "ollama"
     ];
 
