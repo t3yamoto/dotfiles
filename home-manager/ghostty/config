@@ -1,0 +1,12 @@
+font-family = UDEV Gothic 35NF
+font-size = 14
+background-opacity = 0.9
+background-blur = 20
+theme = Kanagawabones
+macos-titlebar-style = hidden
+window-padding-x = 8
+window-padding-y = 8
+cursor-style = block
+shell-integration-features = no-cursor,title,path
+auto-update = off
+macos-option-as-alt = true

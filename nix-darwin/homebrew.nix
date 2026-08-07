@@ -21,6 +21,7 @@
     brews = [
       "borders"
       "crit"
+      "herdr"
       "hunk"
       "ollama"
     ];
@@ -35,6 +36,7 @@
       "choosy"
       "contexts"
       "font-udev-gothic-nf"
+      "ghostty"
       "google-chrome"
       "numi"
       "obsidian"
