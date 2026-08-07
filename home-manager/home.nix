@@ -128,6 +128,8 @@
   xdg.configFile."nvim/lua/plugins/icons.lua".source = ./nvim/lua/plugins/icons.lua;
   xdg.configFile."nvim/lua/plugins/oil.lua".source = ./nvim/lua/plugins/oil.lua;
   xdg.configFile."nvim/lua/plugins/lualine.lua".source = ./nvim/lua/plugins/lualine.lua;
+  xdg.configFile."ghostty/config".source = ./ghostty/config;
+  xdg.configFile."herdr/config.toml".source = ./herdr/config.toml;
   xdg.configFile."wezterm/wezterm.lua".source = ./wezterm/wezterm.lua;
 
   home.sessionVariables = {

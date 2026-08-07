@@ -1,0 +1,27 @@
+onboarding = false
+
+[update]
+version_check = false
+
+[keys]
+prefix = "ctrl+t"
+rename_tab = "prefix+comma"
+split_vertical = "prefix+|"
+resize_mode = "prefix+s"
+
+[ui]
+pane_borders = false
+pane_gaps = true
+hide_tab_bar_when_single_tab = true
+
+[theme]
+name = "kanagawa"
+
+[theme.custom]
+accent = "#C0A36E"
+
+[terminal]
+new_cwd = "follow"
+
+[experimental]
+switch_ascii_input_source_in_prefix = true
