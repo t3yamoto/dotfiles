@@ -44,7 +44,6 @@
       "shottr"
       "slack"
       "spotify"
-      "wezterm@nightly"
     ];
 
     taps = [
