@@ -44,6 +44,7 @@
       "shottr"
       "slack"
       "spotify"
+      "swiftbar"
     ];
 
     taps = [
