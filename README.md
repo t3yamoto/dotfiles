@@ -37,5 +37,8 @@ My macOS configuration managed with nix-darwin + home-manager.
 ```sh
 # Apply changes
 sudo darwin-rebuild switch --flake .
+
+# Update all packages
+nix flake update && sudo darwin-rebuild switch --flake .
 ```
 

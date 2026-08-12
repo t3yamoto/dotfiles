@@ -4,6 +4,8 @@
 
 Run `sudo darwin-rebuild switch --flake .` to apply any configuration changes.
 
+Run `nix flake update && sudo darwin-rebuild switch --flake .` to update all packages.
+
 ## Package management policy
 
 - CLI tools: `home.packages` or `programs.*` (use `programs.*` when shell integration is needed; check availability at https://github.com/nix-community/home-manager/tree/master/modules/programs)
