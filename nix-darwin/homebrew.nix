@@ -47,7 +47,7 @@
     ];
 
     taps = [
-      "FelixKratz/formulae"
+      { name = "FelixKratz/formulae"; trusted = true; }
       "entireio/tap"
     ];
   };
