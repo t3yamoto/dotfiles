@@ -13,7 +13,6 @@
     envchain
     fd
     fzf
-    gemini-cli
     gh
     ghq
     gibo
